@@ -5,7 +5,7 @@ class Drawing extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     Paint paint = Paint()
-    ..strokeWidth = 2.0
+    ..strokeWidth = 4.0
     ..style = PaintingStyle.stroke
     ..color = Colors.green;
     Rect area = Rect.fromLTWH(-2, -2, size.width + 2, size.height + 2);
