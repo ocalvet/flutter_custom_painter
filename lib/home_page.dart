@@ -15,10 +15,10 @@ class HomePage extends StatelessWidget {
           child: CustomPaint(
             foregroundPainter: Drawing(),
             child: Container(
-              child: Text('Home'),
+              // child: Text('Home'),
               width: 200,
-              height: 30,
-              color: Colors.amber,
+              height: 200,
+              // color: Colors.amber,
             ),
           ),
         )
