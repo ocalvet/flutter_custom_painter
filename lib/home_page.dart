@@ -8,21 +8,24 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Custom Painter'),
       ),
-      body: Stack(children: [
-        Positioned(
-          left: 20,
-          top: 20,
-          child: CustomPaint(
-            foregroundPainter: Drawing(),
-            child: Container(
-              // child: Text('Home'),
-              width: 200,
-              height: 200,
-              // color: Colors.amber,
+      body: Stack(
+        fit: StackFit.expand,
+        alignment: Alignment.center,
+        children: [
+          Center(
+            child: CustomPaint(
+              // size: Size(200, 200),
+              foregroundPainter: Drawing(),
+              child: Container(
+                // child: Text('Home'),
+                width: 200,
+                height: 200,
+                // color: Colors.amber,
+              ),
             ),
           ),
-        )
-      ]),
+        ],
+      ),
     );
   }
 }
