@@ -8,8 +8,10 @@ class Drawing extends CustomPainter {
     double centerY = size.height/2;
     double length = size.shortestSide;
     double faceRadius = length/2;
-    double eyeCenterX = size.width/2 - length/4.5;
-    double eyeCenterY = size.height/2 - length/6;
+    double eyeDistanceFromCenter = length/4.5;
+    double leftEyeCenterX = centerX - eyeDistanceFromCenter;
+    double rightEyeCenterX = centerX + eyeDistanceFromCenter;
+    double eyeCenterY = centerY - length/6;
     double eyeRadius = length/8;
     Paint facePaint = Paint()
     ..strokeWidth = 4.0
@@ -21,8 +23,8 @@ class Drawing extends CustomPainter {
     ..color = Colors.black38;
     Rect mouthArea = Rect.fromCircle(center: Offset(centerX, centerY), radius: faceRadius - faceRadius / 4);
     canvas.drawCircle(Offset(centerX, centerY), faceRadius, facePaint);
-    canvas.drawCircle(Offset(eyeCenterX, eyeCenterY), eyeRadius, grayStroke);
-    canvas.drawCircle(Offset(length - eyeCenterX, eyeCenterY), eyeRadius, grayStroke);
+    canvas.drawCircle(Offset(leftEyeCenterX, eyeCenterY), eyeRadius, grayStroke);
+    canvas.drawCircle(Offset(rightEyeCenterX, eyeCenterY), eyeRadius, grayStroke);
     canvas.drawArc(mouthArea, 0.5, 2, false, grayStroke);
   }
 
