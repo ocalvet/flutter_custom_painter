@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
 class Drawing extends CustomPainter {
+  final Color fillColor;
+  final Color strokeColor;
+
+  Drawing({this.fillColor, this.strokeColor});
   @override
   void paint(Canvas canvas, Size size) {
     double centerX = size.width/2;
@@ -16,11 +20,11 @@ class Drawing extends CustomPainter {
     Paint facePaint = Paint()
     ..strokeWidth = 4.0
     ..style = PaintingStyle.fill
-    ..color = Colors.green;
+    ..color = fillColor ?? Colors.green;
     Paint grayStroke = Paint()
     ..strokeWidth = 2.0
     ..style = PaintingStyle.stroke
-    ..color = Colors.black38;
+    ..color = strokeColor ?? Colors.black38;
     Rect mouthArea = Rect.fromCircle(center: Offset(centerX, centerY), radius: faceRadius - faceRadius / 4);
     canvas.drawCircle(Offset(centerX, centerY), faceRadius, facePaint);
     canvas.drawCircle(Offset(leftEyeCenterX, eyeCenterY), eyeRadius, grayStroke);
