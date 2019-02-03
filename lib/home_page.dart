@@ -13,7 +13,9 @@ class HomePage extends StatelessWidget {
         alignment: Alignment.center,
         children: [
           Center(
-            child: HappyFace(),
+            child: HappyFace(
+              size: 200,
+            ),
           ),
         ],
       ),
