@@ -14,7 +14,9 @@ class HomePage extends StatelessWidget {
         children: [
           Center(
             child: HappyFace(
-              size: 200,
+              size: 100,
+              fillColor: Colors.yellow[500],
+              strokeColor: Colors.black12,
             ),
           ),
         ],
