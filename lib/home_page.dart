@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_custom_painter/drawing.dart';
+import 'package:flutter_custom_painter/happy_face/drawing.dart';
 
 class HomePage extends StatelessWidget {
   @override
