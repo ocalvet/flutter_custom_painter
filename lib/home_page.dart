@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_custom_painter/happy_face/drawing.dart';
+import 'package:flutter_custom_painter/happy_face/widget.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -13,16 +13,7 @@ class HomePage extends StatelessWidget {
         alignment: Alignment.center,
         children: [
           Center(
-            child: CustomPaint(
-              // size: Size(200, 200),
-              foregroundPainter: Drawing(),
-              child: Container(
-                // child: Text('Home'),
-                width: 200,
-                height: 100,
-                // color: Colors.amber,
-              ),
-            ),
+            child: HappyFace(),
           ),
         ],
       ),
