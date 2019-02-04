@@ -19,6 +19,13 @@ class HomePage extends StatelessWidget {
               strokeColor: Colors.black12,
             ),
           ),
+          Positioned(
+            top:100,
+            left: 50,
+            child: HappyFace(
+              size: 130,
+            ),
+          ),
         ],
       ),
     );
