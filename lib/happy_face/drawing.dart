@@ -27,6 +27,7 @@ class Drawing extends CustomPainter {
     ..color = strokeColor ?? Colors.black38;
     Rect mouthArea = Rect.fromCircle(center: Offset(centerX, centerY), radius: faceRadius - faceRadius / 4);
     canvas.drawCircle(Offset(centerX, centerY), faceRadius, facePaint);
+    canvas.drawCircle(Offset(centerX, centerY), faceRadius, grayStroke);
     canvas.drawCircle(Offset(leftEyeCenterX, eyeCenterY), eyeRadius, grayStroke);
     canvas.drawCircle(Offset(rightEyeCenterX, eyeCenterY), eyeRadius, grayStroke);
     canvas.drawArc(mouthArea, 0.5, 2, false, grayStroke);
