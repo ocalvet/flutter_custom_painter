@@ -7,7 +7,7 @@ class Drawing extends CustomPainter {
   final Paint facePaint;
   final Paint grayStroke;
 
-  Drawing({this.fillColor, this.strokeColor})
+  Drawing({@required this.fillColor, @required this.strokeColor})
       : facePaint = Paint()
           ..strokeWidth = 4.0
           ..style = PaintingStyle.fill
