@@ -6,7 +6,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Custom Painter',
-      theme: ThemeData.dark(),
+      // theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
       home: HomePage(),
     );
