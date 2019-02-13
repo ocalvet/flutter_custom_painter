@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_custom_painter/custom/custom_widget.dart';
 import 'package:flutter_custom_painter/happy_face/happy_face.dart';
+import 'package:flutter_custom_painter/shadowed_triangle/shadowed_triangle_widget.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -32,7 +32,7 @@ class HomePage extends StatelessWidget {
             right: 10,
             width: 200,
             height: 200,
-            child: CustomWidget(),
+            child: ShadowedTriangle(),
           ),
         ],
       ),

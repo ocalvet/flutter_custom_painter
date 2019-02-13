@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
-class CustomDrawing extends CustomPainter {
+class ShadowedTriangleDrawing extends CustomPainter {
   final Paint grayStroke;
   final Paint fillColor;
 
-  CustomDrawing()
+  ShadowedTriangleDrawing()
       : grayStroke = Paint()
           ..strokeWidth = 2.0
           ..style = PaintingStyle.stroke
